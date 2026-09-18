@@ -5,6 +5,7 @@
         <interface name="java.util.List" />
 		<interface name="org.eclipse.collections.api.ListIterable" />
         <interface name="java.lang.Cloneable" />
+        <interface name="org.eclipse.collections.api.ordered.ReversibleIterable" />
 	</hierarchy>
 	<methods>
 		<method id="org.eclipse.collections.api.list.MutableList sortThis()">
@@ -29,7 +30,7 @@
 				<flow isAlias="true" typeChecking="false">
 					<from sourceSinkType="Field"
 						  AccessPath="[org.eclipse.collections.api.list.MutableList: java.lang.Object[] innerArray]"
-						AccessPathTypes="[java.lang.Object]" />
+						AccessPathTypes="[java.lang.Object[]]"/>
 					<to sourceSinkType="Parameter"
 						ParameterIndex="0"
 						gap="1" />
@@ -54,7 +55,7 @@
 				<flow isAlias="true" typeChecking="false">
 					<from sourceSinkType="Field"
 						  AccessPath="[org.eclipse.collections.api.list.MutableList: java.lang.Object[] innerArray]"
-						AccessPathTypes="[java.lang.Object]" />
+						AccessPathTypes="[java.lang.Object[]]" />
 					<to sourceSinkType="Parameter"
 						ParameterIndex="0"
 						gap="2" />
@@ -79,7 +80,7 @@
 				<flow isAlias="true" typeChecking="false">
 					<from sourceSinkType="Field"
 						  AccessPath="[org.eclipse.collections.api.list.MutableList: java.lang.Object[] innerArray]"
-						AccessPathTypes="[java.lang.Object]" />
+						AccessPathTypes="[java.lang.Object[]]" />
 					<to sourceSinkType="Parameter"
 						ParameterIndex="0"
 						gap="3" />
@@ -104,7 +105,7 @@
 				<flow isAlias="true" typeChecking="false">
 					<from sourceSinkType="Field"
 						  AccessPath="[org.eclipse.collections.api.list.MutableList: java.lang.Object[] innerArray]"
-						AccessPathTypes="[java.lang.Object]" />
+						AccessPathTypes="[java.lang.Object[]]" />
 					<to sourceSinkType="Parameter"
 						ParameterIndex="0"
 						gap="4" />
@@ -129,7 +130,7 @@
 				<flow isAlias="true" typeChecking="false">
 					<from sourceSinkType="Field"
 						  AccessPath="[org.eclipse.collections.api.list.MutableList: java.lang.Object[] innerArray]"
-						AccessPathTypes="[java.lang.Object]" />
+						AccessPathTypes="[java.lang.Object[]]" />
 					<to sourceSinkType="Parameter"
 						ParameterIndex="0"
 						gap="5" />
@@ -154,7 +155,7 @@
 				<flow isAlias="true" typeChecking="false">
 					<from sourceSinkType="Field"
 						  AccessPath="[org.eclipse.collections.api.list.MutableList: java.lang.Object[] innerArray]"
-						AccessPathTypes="[java.lang.Object]" />
+						AccessPathTypes="[java.lang.Object[]]" />
 					<to sourceSinkType="Parameter"
 						ParameterIndex="0"
 						gap="6" />
@@ -179,7 +180,7 @@
 				<flow isAlias="true" typeChecking="false">
 					<from sourceSinkType="Field"
 						  AccessPath="[org.eclipse.collections.api.list.MutableList: java.lang.Object[] innerArray]"
-						AccessPathTypes="[java.lang.Object]" />
+						AccessPathTypes="[java.lang.Object[]]" />
 					<to sourceSinkType="Parameter"
 						ParameterIndex="0"
 						gap="7" />
@@ -204,7 +205,7 @@
 				<flow isAlias="true" typeChecking="false">
 					<from sourceSinkType="Field"
 						  AccessPath="[org.eclipse.collections.api.list.MutableList: java.lang.Object[] innerArray]"
-						AccessPathTypes="[java.lang.Object]" />
+						AccessPathTypes="[java.lang.Object[]]" />
 					<to sourceSinkType="Parameter"
 						ParameterIndex="0"
 						gap="8" />
@@ -229,11 +230,41 @@
 				<flow isAlias="true" typeChecking="false">
 					<from sourceSinkType="Field"
 						  AccessPath="[org.eclipse.collections.api.list.MutableList: java.lang.Object[] innerArray]"
-						AccessPathTypes="[java.lang.Object]" />
+						AccessPathTypes="[java.lang.Object[]]" />
 					<to sourceSinkType="Parameter"
 						ParameterIndex="0"
 						gap="9" />
 				</flow>
+				<flow isAlias="true" typeChecking="false">
+					<from sourceSinkType="Field"
+						  AccessPath="[org.eclipse.collections.api.list.MutableList: java.lang.Object[] innerArray]"
+						  AccessPathTypes="[java.lang.Object[]]" />
+					<to sourceSinkType="Return" />
+				</flow>
+			</flows>
+		</method>
+		<method id="org.eclipse.collections.api.list.MutableList reverseThis()">
+			<flows>
+				<flow isAlias="true" typeChecking="false">
+					<from sourceSinkType="Field"
+						  AccessPath="[org.eclipse.collections.api.list.MutableList: java.lang.Object[] innerArray]"
+						  AccessPathTypes="[java.lang.Object[]]" />
+					<to sourceSinkType="Return" />
+				</flow>
+			</flows>
+		</method>
+		<method id="org.eclipse.collections.api.list.MutableList shuffleThis()">
+			<flows>
+				<flow isAlias="true" typeChecking="false">
+					<from sourceSinkType="Field"
+						  AccessPath="[org.eclipse.collections.api.list.MutableList: java.lang.Object[] innerArray]"
+						  AccessPathTypes="[java.lang.Object[]]" />
+					<to sourceSinkType="Return" />
+				</flow>
+			</flows>
+		</method>
+		<method id="org.eclipse.collections.api.list.MutableList shuffleThis(java.util.Random)">
+			<flows>
 				<flow isAlias="true" typeChecking="false">
 					<from sourceSinkType="Field"
 						  AccessPath="[org.eclipse.collections.api.list.MutableList: java.lang.Object[] innerArray]"
